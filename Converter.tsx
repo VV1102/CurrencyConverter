@@ -10,7 +10,7 @@ const Converter: React.FC = () => {
     // Fetch currency rates from an API
     const fetchData = async () => {
       try {
-        const response = await fetch('https://api.exchangerate-api.com/v4/latest/USD');
+        const response = await fetch();//API key goes in parenthesis
         if (!response.ok) {
           throw new Error('Failed to fetch currency rates');
         }
